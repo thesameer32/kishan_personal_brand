@@ -40,13 +40,6 @@ export default function Navigation() {
             >
               Contact
             </a>
-            <a 
-              href="/admin" 
-              className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm hover:bg-primary/30 transition-colors"
-              data-testid="nav-admin"
-            >
-              Admin
-            </a>
           </div>
           
           <button 
@@ -93,14 +86,6 @@ export default function Navigation() {
                 data-testid="mobile-nav-contact"
               >
                 Contact
-              </a>
-              <a 
-                href="/admin" 
-                className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm hover:bg-primary/30 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                data-testid="mobile-nav-admin"
-              >
-                Admin
               </a>
             </div>
           </div>

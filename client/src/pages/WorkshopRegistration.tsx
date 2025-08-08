@@ -117,18 +117,31 @@ export default function WorkshopRegistration() {
   }
 
   return (
-    <div className="min-h-screen hero-bg flex items-center justify-center p-6">
-      <div className="max-w-4xl w-full">
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Left Column - Workshop Details */}
-          <div className="glass-card p-8 rounded-2xl">
-            <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold text-white mb-2">
-                🚀 Business Mastery Workshop
-              </h1>
-              <p className="text-gray-300 mb-6">
-                Join Kishan Kumar's exclusive workshop and transform your business mindset
-              </p>
+    <div className="min-h-screen hero-bg">
+      {/* Header */}
+      <div className="text-center py-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          🚀 Business Mastery Workshop
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          Join Kishan Kumar's exclusive workshop and transform your business mindset
+        </p>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 pb-12">
+        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          {/* Left Column - Workshop Image & Details */}
+          <div className="space-y-8">
+            {/* Main Workshop Image */}
+            <div className="glass-card p-8 rounded-2xl text-center">
+              <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-xl mb-6 flex items-center justify-center">
+                <div className="text-center">
+                  <i className="fas fa-rocket text-6xl text-primary mb-4"></i>
+                  <h3 className="text-2xl font-bold text-white">Business Mastery</h3>
+                  <p className="text-gray-300">Workshop</p>
+                </div>
+              </div>
               
               {/* Progress Bar */}
               <div className="mb-6">
@@ -146,59 +159,59 @@ export default function WorkshopRegistration() {
                   Only {spotsLeft} spots left!
                 </p>
               </div>
-            </div>
 
-            {/* Workshop Details */}
-            <div className="space-y-6 mb-8">
-              <div className="bg-white/5 p-4 rounded-xl">
-                <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-                  <i className="fas fa-calendar-alt text-primary"></i>
-                  Workshop Details
-                </h3>
-                <ul className="text-gray-300 space-y-2 text-sm">
-                  <li>• <strong>Date:</strong> December 15th, 2024</li>
-                  <li>• <strong>Time:</strong> 7:00 PM - 9:00 PM IST</li>
-                  <li>• <strong>Format:</strong> Live Online Workshop</li>
-                  <li>• <strong>Duration:</strong> 2 Hours + Q&A</li>
-                </ul>
-              </div>
+              {/* Workshop Details */}
+              <div className="space-y-4">
+                <div className="bg-white/5 p-4 rounded-xl">
+                  <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
+                    <i className="fas fa-calendar-alt text-primary"></i>
+                    Workshop Details
+                  </h3>
+                  <ul className="text-gray-300 space-y-2 text-sm">
+                    <li>• <strong>Date:</strong> December 15th, 2024</li>
+                    <li>• <strong>Time:</strong> 7:00 PM - 9:00 PM IST</li>
+                    <li>• <strong>Format:</strong> Live Online Workshop</li>
+                    <li>• <strong>Duration:</strong> 2 Hours + Q&A</li>
+                  </ul>
+                </div>
 
-              <div className="bg-white/5 p-4 rounded-xl">
-                <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-                  <i className="fas fa-star text-primary"></i>
-                  What You'll Learn
-                </h3>
-                <ul className="text-gray-300 space-y-2 text-sm">
-                  <li>• Business Strategy & Scaling Techniques</li>
-                  <li>• Digital Marketing & Brand Building</li>
-                  <li>• Financial Management & Investment</li>
-                  <li>• Networking & Relationship Building</li>
-                  <li>• Mindset & Leadership Skills</li>
-                </ul>
-              </div>
+                <div className="bg-white/5 p-4 rounded-xl">
+                  <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
+                    <i className="fas fa-star text-primary"></i>
+                    What You'll Learn
+                  </h3>
+                  <ul className="text-gray-300 space-y-2 text-sm">
+                    <li>• Business Strategy & Scaling Techniques</li>
+                    <li>• Digital Marketing & Brand Building</li>
+                    <li>• Financial Management & Investment</li>
+                    <li>• Networking & Relationship Building</li>
+                    <li>• Mindset & Leadership Skills</li>
+                  </ul>
+                </div>
 
-              <div className="bg-white/5 p-4 rounded-xl">
-                <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-                  <i className="fas fa-gift text-primary"></i>
-                  Bonuses (Worth ₹50,000+)
-                </h3>
-                <ul className="text-gray-300 space-y-2 text-sm">
-                  <li>• Exclusive WhatsApp Community Access</li>
-                  <li>• Workshop Recording & Resources</li>
-                  <li>• 1-on-1 Q&A Session</li>
-                  <li>• Business Templates & Tools</li>
-                  <li>• Networking with Like-minded Entrepreneurs</li>
-                </ul>
+                <div className="bg-white/5 p-4 rounded-xl">
+                  <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
+                    <i className="fas fa-gift text-primary"></i>
+                    Bonuses (Worth ₹50,000+)
+                  </h3>
+                  <ul className="text-gray-300 space-y-2 text-sm">
+                    <li>• Exclusive WhatsApp Community Access</li>
+                    <li>• Workshop Recording & Resources</li>
+                    <li>• 1-on-1 Q&A Session</li>
+                    <li>• Business Templates & Tools</li>
+                    <li>• Networking with Like-minded Entrepreneurs</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             {/* Recent Registrations */}
-            <div className="bg-white/5 p-4 rounded-xl">
-              <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
+            <div className="glass-card p-6 rounded-2xl">
+              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
                 <i className="fas fa-users text-primary"></i>
                 Recent Registrations
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {recentRegistrations.map((reg, index) => (
                   <div key={index} className="flex justify-between items-center text-sm">
                     <span className="text-gray-300">
@@ -209,15 +222,15 @@ export default function WorkshopRegistration() {
                 ))}
               </div>
             </div>
-          </div>
+                     </div>
 
           {/* Right Column - Registration Form */}
           <div className="glass-card p-8 rounded-2xl">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-white mb-2">
+              <h2 className="text-3xl font-bold text-white mb-2">
                 Reserve Your Spot
               </h2>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-lg">
                 Join the exclusive workshop and transform your business
               </p>
             </div>
@@ -286,7 +299,7 @@ export default function WorkshopRegistration() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn-primary w-full py-3 rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-primary w-full py-4 rounded-xl font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <span className="flex items-center justify-center gap-2">
@@ -307,6 +320,60 @@ export default function WorkshopRegistration() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+
+        {/* Bottom Details Section */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* About Kishan */}
+          <div className="glass-card p-6 rounded-2xl">
+            <div className="text-center mb-4">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <i className="fas fa-user-tie text-primary text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">About Kishan</h3>
+            </div>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Kishan Kumar is a successful entrepreneur and business coach with over 8 years of experience. 
+              He has helped 500+ businesses scale and grow their revenue by implementing proven strategies.
+            </p>
+          </div>
+
+          {/* Workshop Benefits */}
+          <div className="glass-card p-6 rounded-2xl">
+            <div className="text-center mb-4">
+              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <i className="fas fa-chart-line text-green-400 text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Workshop Benefits</h3>
+            </div>
+            <ul className="text-gray-300 text-sm space-y-2">
+              <li>• Practical business strategies</li>
+              <li>• Real-world case studies</li>
+              <li>• Networking opportunities</li>
+              <li>• Lifetime community access</li>
+              <li>• Actionable takeaways</li>
+            </ul>
+          </div>
+
+          {/* Testimonials */}
+          <div className="glass-card p-6 rounded-2xl">
+            <div className="text-center mb-4">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <i className="fas fa-quote-left text-blue-400 text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">What People Say</h3>
+            </div>
+            <div className="space-y-3">
+              <div className="text-gray-300 text-sm">
+                <p className="italic">"Kishan's workshop completely changed my business approach. Highly recommended!"</p>
+                <p className="text-primary font-medium mt-1">- Priya S., Entrepreneur</p>
+              </div>
+              <div className="text-gray-300 text-sm">
+                <p className="italic">"The strategies I learned helped me double my revenue in 3 months."</p>
+                <p className="text-primary font-medium mt-1">- Rahul M., Business Owner</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
