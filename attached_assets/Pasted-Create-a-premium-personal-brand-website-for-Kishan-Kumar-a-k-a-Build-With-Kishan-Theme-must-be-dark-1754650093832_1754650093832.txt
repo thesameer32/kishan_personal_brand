@@ -1,0 +1,72 @@
+Create a premium personal brand website for Kishan Kumar a.k.a. Build With Kishan Theme must be dark with glowing electric blue elements, a clean layout, and soft animations. Purpose: Business education + audience trust + free workshop funnel Design should feel like a high-performance coaching platform — simple, sharp, futuristic.
+
+🔷 Hero Section (Full Screen 16:9 Ratio)
+* Right side:
+    * Bold text: “Kishan Kumar — Business Coach for the Next Generation”
+    * Subtext: “178K+ followers | ₹10CR+ Business Impact | 1CR+ Income by Age 20”
+    * CTA Buttons:
+        * [📅 Join Free Workshop]
+        * [📥 Download Free Resources]
+* Left side:
+    * Photo of Kishan (to be uploaded) in Circle Border
+    * Optional glowing Lottie animation (rocket, books, blueprint, charts)
+* Background: dark with light glowing particles / neon gradient
+* Font: Sora or Poppins, bold + modern
+* Animation: slow glow pulse, fade-up text
+
+🙋 About Section
+* Clean paragraph block: “I’m Kishan Kumar, a 20-year-old entrepreneur and business coach. I’ve helped creators, founders and early-stage businesses think clearly, act smarter, and build real results — without fluff.” Currently running the viral ‘MBA in 60 Days’ series on Instagram with 178K+ followers and over ₹10CR in business impact created.” 
+* Optional stat cards (horizontal scroll or 3D hover):
+    * 178K+ Followers
+    * ₹10CR+ Revenue Impact
+    * 1CR+ Personal Income
+    * MBA in 60 Days Series
+
+🎓 Free Workshop Section
+* Section Heading: “Join My Next Free Business Workshop”
+* Card Layout:
+    * Title
+    * Date / Time
+    * Button: [Reserve My Spot]
+    * Tagline: “No fluff. Just clarity, systems, and real business thinking.”
+* Optional: floating calendar icon / ticking timer animation
+
+📦 Resources Section
+* Section Heading: “Free Tools, Templates & Starter Kits”
+* Grid layout of 3–4 items (PDFs, toolkits, swipe files)
+* Example (content can be added later):
+    * Business Growth Starter Kit
+    * Instagram Bio Optimization Guide
+    * Sales Funnel Template
+* Each resource = glowing hover card with [Download] button
+
+📷 Instagram Section (optional)
+* Embedded IG post grid (dark mode style)
+* Caption: “Follow @buildwithkishan for daily business breakdowns & real strategy.”
+* CTA: [📲 Follow Now]
+
+📩 Contact Section
+* Clean contact form (Name, Email, Message)
+* WhatsApp / Telegram link button
+* Optional newsletter checkbox: “Get updates on new workshops”
+
+🦶 Footer
+* Navigation: About • Workshop • Resources • Contact
+* Socials: Instagram, LinkedIn
+* Font: Sora / Inter
+* Copyright: © 2025 Build With Kishan. Designed to Educate.
+
+🔧 Design Guidelines
+* Background: Deep navy / #0A0F1C
+* Accent: Electric blue / neon gradients
+* Glow effects on buttons, borders, hover elements
+* Font hierarchy:
+    * H1: Sora or Poppins SemiBold
+    * Body: Inter or Manrope
+* Page transition: smooth scroll, AOS-style fade reveals
+* Use Lottie animations for: rocket, notepad, growing chart, calendar
+* Style: Glassmorphism cards, floating hover effects, interactive UI
+* Responsive: Desktop + Mobile
+
+❗ No service section, no niche-based targeting.
+Only education, growth, and trust positioning as a business educator.
