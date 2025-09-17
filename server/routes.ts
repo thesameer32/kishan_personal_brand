@@ -15,7 +15,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     // Workshop Registration Routes
   app.post("/api/workshop/register", async (req, res) => {
     try {
-      const { name, email, profession } = insertWorkshopRegistrationSchema.parse(req.body);
+      const { name, email, phone } = insertWorkshopRegistrationSchema.parse(req.body);
       
       // Check if already registered
       const existing = await getRegistrationByEmail(email);
@@ -28,14 +28,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const registration = await createRegistration({
         name,
         email,
-        profession
+        phone
       });
 
-      console.log(`New workshop registration: ${name} (${email}) - ${profession}`);
+      console.log(`New workshop registration: ${name} (${email}) - ${phone}`);
 
       res.json({ 
         success: true, 
-        message: "Congratulations! You've successfully secured your spot in the workshop! We'll send you all the details soon."
+        message: "Registration Successful! WhatsApp & email par confirmation bhej diya gaya hai. Niche button se WhatsApp group join kar lo to never miss updates."
       });
     } catch (error) {
       console.error("Registration error:", error);

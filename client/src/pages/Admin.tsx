@@ -4,7 +4,7 @@ interface Registration {
   id: string;
   name: string;
   email: string;
-  profession: string;
+  phone: string | null;
   createdAt: string;
 }
 
@@ -36,29 +36,36 @@ export default function Admin() {
     return new Date(reg.createdAt).toDateString() === today;
   }).length;
   
-  const professionStats = registrations.reduce((acc, reg) => {
-    acc[reg.profession] = (acc[reg.profession] || 0) + 1;
+  // Calculate phone number statistics (first 3 digits for area code analysis)
+  const phoneStats = registrations.reduce((acc, reg) => {
+    if (reg.phone && reg.phone.length >= 3) {
+      const areaCode = reg.phone.substring(0, 3);
+      acc[areaCode] = (acc[areaCode] || 0) + 1;
+    }
     return acc;
   }, {} as Record<string, number>);
 
-  const filteredProfessionStats = filteredRegistrations.reduce((acc, reg) => {
-    acc[reg.profession] = (acc[reg.profession] || 0) + 1;
+  const filteredPhoneStats = filteredRegistrations.reduce((acc, reg) => {
+    if (reg.phone && reg.phone.length >= 3) {
+      const areaCode = reg.phone.substring(0, 3);
+      acc[areaCode] = (acc[areaCode] || 0) + 1;
+    }
     return acc;
   }, {} as Record<string, number>);
 
-  const topProfessions = Object.entries(selectedDate ? filteredProfessionStats : professionStats)
+  const topAreaCodes = Object.entries(selectedDate ? filteredPhoneStats : phoneStats)
     .sort(([,a], [,b]) => b - a)
     .slice(0, 3);
 
   // Export functionality
   const exportToCSV = () => {
-    const headers = ['Name', 'Email', 'Profession', 'Registration Date'];
+    const headers = ['Name', 'Email', 'Phone', 'Registration Date'];
     const csvContent = [
       headers.join(','),
       ...registrations.map(reg => [
         `"${reg.name}"`,
         `"${reg.email}"`,
-        `"${reg.profession}"`,
+        `"${reg.phone || 'N/A'}"`,
         `"${new Date(reg.createdAt).toLocaleDateString()}"`
       ].join(','))
     ].join('\n');
@@ -176,22 +183,22 @@ export default function Admin() {
               </div>
               <div className="bg-white/10 p-6 rounded-xl">
                 <div className="text-2xl font-bold text-blue-400 mb-2">
-                  {Object.keys(selectedDate ? filteredProfessionStats : professionStats).length}
+                  {Object.keys(selectedDate ? filteredPhoneStats : phoneStats).length}
                 </div>
                 <div className="text-gray-300 text-sm">
-                  {selectedDate ? 'Filtered' : 'Unique'} Professions
+                  {selectedDate ? 'Filtered' : 'Unique'} Area Codes
                 </div>
               </div>
             </div>
 
-            {/* Top Professions */}
-            {topProfessions.length > 0 && (
+            {/* Top Area Codes */}
+            {topAreaCodes.length > 0 && (
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-white mb-4">Top Professions</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">Top Area Codes</h3>
                 <div className="flex flex-wrap justify-center gap-3">
-                  {topProfessions.map(([profession, count]) => (
-                    <div key={profession} className="bg-primary/20 text-primary px-4 py-2 rounded-full">
-                      {profession}: {count}
+                  {topAreaCodes.map(([areaCode, count]) => (
+                    <div key={areaCode} className="bg-primary/20 text-primary px-4 py-2 rounded-full">
+                      {areaCode}xxx: {count}
                     </div>
                   ))}
                 </div>
@@ -231,7 +238,7 @@ export default function Admin() {
                 <tr className="border-b border-white/20">
                   <th className="text-white font-semibold p-4">Name</th>
                   <th className="text-white font-semibold p-4">Email</th>
-                  <th className="text-white font-semibold p-4">Profession</th>
+                  <th className="text-white font-semibold p-4">Phone</th>
                   <th className="text-white font-semibold p-4">Registration Date</th>
                 </tr>
               </thead>
@@ -252,7 +259,7 @@ export default function Admin() {
                       <td className="text-gray-300 p-4">{reg.email}</td>
                       <td className="text-gray-300 p-4">
                         <span className="bg-primary/20 text-primary px-2 py-1 rounded-full text-sm">
-                          {reg.profession}
+                          {reg.phone || 'N/A'}
                         </span>
                       </td>
                       <td className="text-gray-300 p-4">

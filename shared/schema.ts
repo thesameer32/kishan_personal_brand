@@ -13,7 +13,7 @@ export const workshopRegistrations = sqliteTable("workshop_registrations", {
   id: text("id").primaryKey().default(sql`(hex(randomblob(16)))`),
   name: text("name").notNull(),
   email: text("email").notNull(),
-  profession: text("profession").notNull(),
+  phone: text("phone").notNull(),
   createdAt: integer("created_at", { mode: 'timestamp' }).default(sql`(unixepoch())`),
 });
 
@@ -25,7 +25,7 @@ export const insertUserSchema = createInsertSchema(users).pick({
 export const insertWorkshopRegistrationSchema = createInsertSchema(workshopRegistrations).pick({
   name: true,
   email: true,
-  profession: true,
+  phone: true,
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
