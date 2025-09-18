@@ -138,7 +138,7 @@ export default function NewHome() {
               <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-[#07101c] ring-1 ring-inset ring-white/10 grid place-items-center">
                 <div className="text-center px-6">
                   <div className="mx-auto h-16 w-16 rounded-2xl overflow-hidden mb-4">
-                    <img src="/src/assets/kishanimg.jpg" alt="Kishan Sharma" className="w-full h-full object-cover"/>
+                    <img src="/hostimg.jpg" alt="Kishan Sharma" className="w-full h-full object-cover"/>
                   </div>
                   <p className="text-sm text-white/60">Host</p>
                   <p className="text-xl font-semibold">Kishan Sharma</p>
