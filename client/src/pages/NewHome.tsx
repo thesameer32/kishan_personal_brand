@@ -18,7 +18,7 @@ const useCountdown = (targetDateISO: string) => {
 };
 
 export default function NewHome() {
-  const { d, h, m, s } = useCountdown("2025-09-24T19:00:00+05:30"); // 24 Sept 7 PM IST default
+  const { d, h, m, s } = useCountdown("2025-09-25T19:00:00+05:30"); // 25 Sept 7 PM IST default
   const [openSuccess, setOpenSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -76,8 +76,7 @@ export default function NewHome() {
       {/* Navbar */}
       <header className="sticky top-0 z-40 backdrop-blur-md bg-[#05080f]/60 border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 shadow-[0_10px_30px_rgba(37,99,235,.45)]"/>
+          <div className="flex items-center">
             <span className="font-semibold tracking-wide">Build with Kishan</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
@@ -290,7 +289,7 @@ export default function NewHome() {
         <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-3 gap-6 items-center">
           <div className="md:col-span-2">
             <h3 className="text-2xl md:text-3xl font-bold">Join the 7‑Day Mega Workshop — Free</h3>
-            <p className="mt-2 text-white/70">Execution‑first system for modern startups. Starts 24 Sept, 7 PM IST.</p>
+            <p className="mt-2 text-white/70">Execution‑first system for modern startups. Starts 25 Sept, 7 PM IST.</p>
           </div>
           <div className="md:col-span-1">
             <a href="#register" className="group inline-flex items-center justify-center w-full h-12 rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-400 font-semibold shadow-[0_18px_40px_rgba(56,189,248,.5)] transition">
@@ -331,7 +330,7 @@ export default function NewHome() {
             >
               <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 mb-3"/>
               <h4 className="text-xl font-bold">Registration Successful 🎉</h4>
-              <p className="mt-2 text-white/70 text-sm">WhatsApp & email par confirmation bhej diya gaya hai. Niche button se WhatsApp group join kar lo to never miss updates.</p>
+              <p className="mt-2 text-white/70 text-sm">WhatsApp & email par confirmation bhej diya gaya hai. Niche button se Telegram channel join kar lo to never miss updates.</p>
               <div className="mt-5 flex gap-3">
                 <button 
                   onClick={() => setOpenSuccess(false)} 
@@ -339,7 +338,7 @@ export default function NewHome() {
                 >
                   Close
                 </button>
-                <a href="https://wa.me/" className="inline-flex h-11 items-center justify-center px-5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-300 font-semibold">Join WhatsApp Group</a>
+                <a href="https://t.me/+TaiuQMd6z7U1M2U1" className="inline-flex h-11 items-center justify-center px-5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-300 font-semibold">Join Telegram Channel</a>
               </div>
               <button 
                 onClick={() => setOpenSuccess(false)} 
