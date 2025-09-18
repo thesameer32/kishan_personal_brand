@@ -140,7 +140,7 @@ export default function NewHome() {
                   <div className="mx-auto h-16 w-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 mb-4"/>
                   <p className="text-sm text-white/60">Host</p>
                   <p className="text-xl font-semibold">Kishan Sharma</p>
-                  <p className="mt-2 text-white/60">Start Date: <span className="text-white">24 Sept, 7 PM IST</span></p>
+                  <p className="mt-2 text-white/60">Start Date: <span className="text-white">25 Sept, 7 PM IST</span></p>
                   <p className="mt-4 text-white/70 text-sm">"Aaj ka business showroom se nahi, Instagram se banta hai." — Reset how you think about startups.</p>
                 </div>
               </div>
