@@ -263,8 +263,8 @@ export default function NewHome() {
           <div className="order-1 md:order-2">
             <div className="relative">
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 to-cyan-400 blur opacity-40" />
-              <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-white/[.03] aspect-[4/5] grid place-items-center">
-                <span className="text-white/60 text-sm">Add host photo here</span>
+              <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-white/[.03] aspect-[4/5]">
+                <img src="/hostimg.jpg" alt="Kishan Kumar" className="w-full h-full object-cover"/>
               </div>
             </div>
           </div>
